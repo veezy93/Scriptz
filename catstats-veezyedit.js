@@ -44,6 +44,7 @@
 
     var tsvCookieName = "save_as_tsv_status";
     var linkId = "saveAsTSVLink";
+    var teamNamesId = "teamsForSheet";
 
     var tsvSavePrompt = "Save as .tsv";
 
@@ -71,8 +72,8 @@
         .css("cursor", "pointer");
         $label.prepend($checkbox);
         
-        var $teamNames = $('<input>', { type: "text", id:teamNamesId });
-        $label.append($teamNames);
+        var $teamsForSheet = $('<input>', { type: "text", id:teamNamesId });
+        $label.append($teamsForSheet);
         
 
         var $el = $('#optionsName');
