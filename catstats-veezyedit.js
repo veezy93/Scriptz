@@ -72,7 +72,7 @@
         .css("cursor", "pointer");
         $label.prepend($checkbox);
         
-        var $teamsForSheet = $('<input>', { type: "text", id:teamNamesId });
+        var $teamsForSheet = $('<input>', { type: "text", id: teamNamesId });
         $label.append($teamsForSheet);
         
 
