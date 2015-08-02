@@ -73,7 +73,7 @@
         $label.prepend($checkbox);
         
         var $teamsForSheet = $('<input>', { type: "text", id: teamNamesId });
-        var $inputPrompt = $('<label />').html('Sheet Name: ')
+        var $inputPrompt = $('<label />').html('Sheet Name: ');
         //$teamsForSheet.prepend('<label id="inputPrompt">Sheet Name: </label>');
         $label.append($inputPrompt);
         $inputPrompt.append($teamsForSheet);
@@ -176,6 +176,12 @@
      */
     catstats.onEnd = function onEnd() {
        if(this.wantsStats && !this.downloaded) {
+         if ($('#teamNamesId').val().length > 0) {
+           alert($('#teamNamesId').val());
+         } else {
+           var retVal = prompt("Enter the name of the sheet: ", "(teams)");
+           alert("You have entered : " +  retVal );
+         }
          this.exportStats();
        }
      }
