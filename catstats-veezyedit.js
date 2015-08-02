@@ -70,6 +70,10 @@
         var $label = $('<label />').html(tsvSavePrompt)
         .css("cursor", "pointer");
         $label.prepend($checkbox);
+        
+        var $teamNames = $('<input>', { type: "text", id:teamNamesId });
+        $label.append($teamNames);
+        
 
         var $el = $('#optionsName');
         $label.insertBefore($el);
