@@ -73,7 +73,7 @@
         $label.prepend($checkbox);
         
         var $teamsForSheet = $('<input>', { type: "text", id: teamNamesId });
-        $(teamNamesId).prepend('<p id="inputPrompt">Sheet Name: </p>');
+        $teamsForSheet.prepend('<p id="inputPrompt">Sheet Name: </p>');
         $label.append($teamsForSheet);
         
 
