@@ -74,6 +74,7 @@
         
         var $teamsForSheet = $('<input>', { type: "text", id: teamNamesId });
         $label.append($teamsForSheet);
+        $(teamNamesId).attr("placeholder", "Sheet Name (teams)");
         
 
         var $el = $('#optionsName');
