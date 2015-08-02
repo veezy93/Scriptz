@@ -74,9 +74,7 @@
         
         var $teamsForSheet = $('<input>', { type: "text", id: teamNamesId });
         $label.append($teamsForSheet);
-        $(teamNamesId).prepend('<p id="inputPrompt">Sheet Name: </p>');
-        $(teamNamesId).css('margin-left', '5px');
-        $(inputPrompt).css('margin-left', '10px');
+        
 
         var $el = $('#optionsName');
         $label.insertBefore($el);
